@@ -1,6 +1,4 @@
-"use strict";
+import { area, circumference } from './exportFile';
 
-var _exportFile = require("./exportFile.js");
-
-console.log('圆面积：' + (0, _exportFile.area)(4));
-console.log('圆周长：' + (0, _exportFile.circumference)(14));
+console.log('圆面积：' + area(4));
+console.log('圆周长：' + circumference(14));

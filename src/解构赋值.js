@@ -1,9 +1,8 @@
-"use strict";
 
-var _foo$bar = {
+const obj = {
   foo: 'aaa',
   bar: 'bbb'
-},
-    foo = _foo$bar.foo,
-    bar = _foo$bar.bar;
+}
+const { foo, bar } = obj;
+
 console.log(foo, bar);

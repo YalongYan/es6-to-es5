@@ -1,25 +1,17 @@
-"use strict";
-
-var a = [];
-
+let arr1 = []
 for (var i = 0; i < 10; i++) {
-  a[i] = function () {
+  arr1[i] = function () {
     console.log(i);
   };
 }
 
-console.log(a[6]()); // 10
+console.log(arr2)
 
-var a = [];
-
-var _loop = function _loop(_i) {
-  a[_i] = function () {
-    console.log(_i);
+let arr2 = []
+for (let i = 0; i < 10; i++) {
+  arr2[i] = function () {
+    console.log(i);
   };
-};
-
-for (var _i = 0; _i < 10; _i++) {
-  _loop(_i);
 }
 
-console.log(a[6]()); // 6
+console.log(arr2)

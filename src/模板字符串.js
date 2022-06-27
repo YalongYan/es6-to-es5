@@ -1,7 +1,9 @@
-"use strict";
-
-var v = 'tbl';
-var str1 = 'my name is ${v}~'; // 不带换行
-// 有换行
-
-var str2 = "\n<h2>\n  my name is ".concat(v, "~\n</h2>\n");
+let v = 'tbl';
+let str1 = `my name is ${v}~`
+let str2 = `
+my
+name 
+is ${v}
+`
+console.log(str1) // 没有换行
+console.log(str2) // 有换行
