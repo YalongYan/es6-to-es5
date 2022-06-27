@@ -1,0 +1,26 @@
+{
+  "name": "es6-to-es5",
+  "version": "1.0.0",
+  "description": "es6转为es5",
+  "main": "index.js",
+  "scripts": {
+    "delete-dist": "rm -rf dist",
+    "dev": "babel src -d src",
+    "start": "npm run delete-dist && npx babel src -d dist --presets=babel-preset-env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tangbolong",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "browserify": "^17.0.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-runtime": "^6.26.0"
+  }
+}
